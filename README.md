@@ -1,132 +1,95 @@
-# Data-Immersion-Wrangling
-Customer dataset cleaning and preprocessing using Python and Pandas.
-# Data Immersion & Wrangling Project
+<h1 align="center">✨ Data Immersion & Wrangling Project ✨</h1>
 
-## About This Project
-
-In this project, I worked on cleaning and preparing a customer sales dataset. The main aim was to understand how real-world data looks and how it can be converted into a clean and usable format for analysis.
-
-During this project, I learned that real datasets often contain errors, missing values, duplicates, and inconsistent information. This project helped me understand how to handle those issues using Python and Pandas.
+<p align="center">
+Transforming raw customer data into clean, reliable, and analysis-ready insights using Python & Pandas.
+</p>
 
 ---
 
-## Project Objective
+## 🌸 About This Project
 
-The goal of this project was to:
+Real-world data is rarely perfect.  
+In this project, I worked on understanding and cleaning a customer sales dataset by identifying data quality issues and transforming the data into a usable format.
 
-• Understand the dataset  
-• Identify data quality problems  
-• Clean and transform the data  
-• Create useful new features  
-• Prepare the dataset for further analysis  
+This project helped me learn how data preprocessing plays a major role before performing any analysis or machine learning.
 
 ---
 
-## Dataset Information
+## 🎯 Project Goals
 
-The dataset contains customer details and purchase information.
-
-### Columns Included:
-- Customer ID
-- Customer Name
-- Date of Birth
-- Purchase Date
-- Purchase Amount
-- City
-- Gender
+✔ Understand dataset structure  
+✔ Identify data quality problems  
+✔ Clean and preprocess the dataset  
+✔ Create meaningful new features  
+✔ Prepare dataset for analysis  
 
 ---
 
-## Problems Found in Dataset
+## 📊 Dataset Overview
 
-While analyzing the dataset, I found several issues:
+The dataset contains customer purchase and demographic details.
 
-• Some city values were missing  
-• Purchase amount had missing entries  
-• Duplicate customer records were present  
-• Gender column had inconsistent formatting  
-• Some purchase values were extremely high or low  
-
----
-
-## Steps I Performed
-
-### 1. Data Understanding
-I first loaded the dataset and explored its structure using Pandas functions like head(), info(), and describe().
+| Column | Description |
+|----------|-------------|
+| 🆔 Customer_ID | Unique customer number |
+| 👤 Name | Customer name |
+| 🎂 Date_of_Birth | Customer birth date |
+| 🛍 Purchase_Date | Date of purchase |
+| 💰 Purchase_Amount | Amount spent |
+| 🌍 City | Customer location |
+| ⚧ Gender | Customer gender |
 
 ---
 
-### 2. Data Dictionary
-I created a data dictionary explaining each column, its data type, and its business importance.
+## ⚠️ Challenges Found in Dataset
+
+While exploring the data, I found:
+
+🔹 Missing city values  
+🔹 Missing purchase amounts  
+🔹 Duplicate records  
+🔹 Inconsistent gender formatting  
+🔹 Extreme purchase values (Outliers)  
 
 ---
 
-### 3. Data Cleaning
+## 🛠 Steps Performed
 
-I performed the following cleaning steps:
-
-• Removed duplicate records  
-• Filled missing city values with "Unknown"  
-• Replaced missing purchase amounts with average values  
-• Standardized gender column formatting  
+### 🔍 Data Familiarization
+Explored dataset using Pandas functions to understand structure and quality.
 
 ---
 
-### 4. Data Transformation
-I converted date columns into datetime format to make them easier to analyze.
+### 📚 Data Dictionary Creation
+Documented column meanings and business importance.
 
 ---
 
-### 5. Feature Engineering
-I created a new column called Customer Age using the Date of Birth column.
+### 🧹 Data Cleaning
+
+✔ Removed duplicate records  
+✔ Filled missing city values with **"Unknown"**  
+✔ Replaced missing purchase values with **average amount**  
+✔ Standardized gender formatting  
 
 ---
 
-### 6. Outlier Removal
-I removed extreme purchase values using the IQR statistical method.
+### 🔄 Data Transformation
+Converted date columns into datetime format for better analysis.
 
 ---
 
-## Final Result
+### 🧠 Feature Engineering
+Created a new column:
 
-After completing all preprocessing steps, I generated a cleaned dataset that is ready for analysis and machine learning tasks.
-
----
-
-## Tools Used
-
-Python  
-Pandas  
-NumPy  
-Jupyter Notebook  
+✨ **Customer Age** (Derived from Date of Birth)
 
 ---
 
-## What I Learned
-
-This project helped me understand:
-
-• Importance of data cleaning  
-• Handling missing values and duplicates  
-• Feature engineering techniques  
-• Statistical methods for outlier detection  
-• Real-world data preprocessing workflow  
+### 📉 Outlier Removal
+Used Interquartile Range (IQR) statistical method to remove abnormal purchase values.
 
 ---
 
-## Project Files
+## 📁 Project Structure
 
-customer_sales_dataset.csv – Raw dataset  
-cleaned_customer_sales.csv – Cleaned dataset  
-data_dictionary.csv – Column description  
-data_cleaning.ipynb – Complete implementation  
-
----
-
-## Author
-
-Arshiya Ruksar
-
----
-
-This project was completed as part of my learning and internship experience in data preprocessing and analysis.
