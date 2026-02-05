@@ -62,4 +62,53 @@ Gender column values were standardized to maintain consistency.
 Date_of_Birth and Purchase_Date columns were converted into datetime format.
 
 ### Feature Engineering
-A new column "Customer_Age" was created usin_
+A new column "Customer_Age" was created using Date_of_Birth.
+
+### Outlier Removal
+Outliers in Purchase Amount were removed using the Interquartile Range (IQR) method.
+
+---
+
+## Final Output
+The final cleaned dataset is stored as:
+
+cleaned_customer_sales.csv
+
+This dataset is ready for analysis and machine learning applications.
+
+---
+
+## Tools and Technologies Used
+
+- Python  
+- Pandas  
+- NumPy  
+- Jupyter Notebook  
+
+---
+
+## Project Files
+
+customer_sales_dataset.csv – Raw dataset  
+cleaned_customer_sales.csv – Clean dataset  
+data_dictionary.csv – Column description  
+data_cleaning.ipynb – Project implementation  
+
+---
+
+## Learning Outcomes
+
+This project helped in understanding:
+
+- Real-world data cleaning techniques  
+- Handling missing values and duplicates  
+- Feature engineering methods  
+- Statistical outlier detection  
+- Data preprocessing workflow  
+
+---
+
+## Author
+Arshiya Ruksar
+
+This project was completed as part of internship training in data preprocessing and analysis.
