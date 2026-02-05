@@ -1,95 +1,65 @@
-<h1 align="center">✨ Data Immersion & Wrangling Project ✨</h1>
+# Data Immersion and Wrangling Project
 
-<p align="center">
-Transforming raw customer data into clean, reliable, and analysis-ready insights using Python & Pandas.
-</p>
-
----
-
-## 🌸 About This Project
-
-Real-world data is rarely perfect.  
-In this project, I worked on understanding and cleaning a customer sales dataset by identifying data quality issues and transforming the data into a usable format.
-
-This project helped me learn how data preprocessing plays a major role before performing any analysis or machine learning.
+## Project Overview
+This project focuses on understanding, cleaning, and preparing a customer sales dataset for analysis. The main goal is to identify data quality issues and transform raw data into a structured and reliable dataset using Python and Pandas.
 
 ---
 
-## 🎯 Project Goals
+## Project Objective
+The objective of this project is to perform data preprocessing by:
 
-✔ Understand dataset structure  
-✔ Identify data quality problems  
-✔ Clean and preprocess the dataset  
-✔ Create meaningful new features  
-✔ Prepare dataset for analysis  
-
----
-
-## 📊 Dataset Overview
-
-The dataset contains customer purchase and demographic details.
-
-| Column | Description |
-|----------|-------------|
-| 🆔 Customer_ID | Unique customer number |
-| 👤 Name | Customer name |
-| 🎂 Date_of_Birth | Customer birth date |
-| 🛍 Purchase_Date | Date of purchase |
-| 💰 Purchase_Amount | Amount spent |
-| 🌍 City | Customer location |
-| ⚧ Gender | Customer gender |
+- Understanding the dataset structure  
+- Creating a data dictionary  
+- Identifying data quality issues  
+- Cleaning and transforming data  
+- Performing feature engineering  
+- Removing outliers  
+- Preparing the final dataset for analysis  
 
 ---
 
-## ⚠️ Challenges Found in Dataset
+## Dataset Description
 
-While exploring the data, I found:
+The dataset contains customer demographic and purchase information.
 
-🔹 Missing city values  
-🔹 Missing purchase amounts  
-🔹 Duplicate records  
-🔹 Inconsistent gender formatting  
-🔹 Extreme purchase values (Outliers)  
-
----
-
-## 🛠 Steps Performed
-
-### 🔍 Data Familiarization
-Explored dataset using Pandas functions to understand structure and quality.
+| Column Name | Description |
+|-------------|-------------|
+| Customer_ID | Unique customer identifier |
+| Name | Customer name |
+| Date_of_Birth | Customer birth date |
+| Purchase_Date | Date of purchase |
+| Purchase_Amount | Amount spent by customer |
+| City | Customer location |
+| Gender | Customer gender |
 
 ---
 
-### 📚 Data Dictionary Creation
-Documented column meanings and business importance.
+## Data Quality Issues Identified
+
+During data profiling, the following issues were found:
+
+- Missing values in City and Purchase Amount  
+- Duplicate customer records  
+- Inconsistent Gender formatting  
+- Outliers in Purchase Amount  
+- Date format inconsistencies  
 
 ---
 
-### 🧹 Data Cleaning
+## Data Cleaning and Transformation Steps
 
-✔ Removed duplicate records  
-✔ Filled missing city values with **"Unknown"**  
-✔ Replaced missing purchase values with **average amount**  
-✔ Standardized gender formatting  
+### Duplicate Removal
+Duplicate rows were removed to maintain data accuracy and uniqueness.
 
----
+### Missing Value Handling
+- Missing City values were replaced with "Unknown"  
+- Missing Purchase Amount values were replaced using mean value  
 
-### 🔄 Data Transformation
-Converted date columns into datetime format for better analysis.
+### Categorical Data Standardization
+Gender column values were standardized to maintain consistency.
 
----
+### Date Conversion
+Date_of_Birth and Purchase_Date columns were converted into datetime format.
 
-### 🧠 Feature Engineering
-Created a new column:
-
-✨ **Customer Age** (Derived from Date of Birth)
-
----
-
-### 📉 Outlier Removal
-Used Interquartile Range (IQR) statistical method to remove abnormal purchase values.
-
----
-
-## 📁 Project Structure
-
+### Feature Engineering
+A new column "Customer_Age" was created usin_
